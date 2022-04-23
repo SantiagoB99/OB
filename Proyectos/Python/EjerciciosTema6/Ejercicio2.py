@@ -8,10 +8,10 @@ class Alumno:
         self.nota = nota
 
     def mostrarNota(self):
-        print(self.nota)
+        print("Nota:", self.nota)
 
     def mostrarNombre(self):
-        print(self.nombre)
+        print("Alumno:", self.nombre)
 
     def resultado(self):
         print("El alumno obtuvo un ", self.nota)
@@ -21,4 +21,6 @@ class Alumno:
             print("Por lo tanto no aprobó")
 
 a = Alumno("Santiago", 4)
+a.mostrarNombre()
+a.mostrarNota()
 a.resultado()
