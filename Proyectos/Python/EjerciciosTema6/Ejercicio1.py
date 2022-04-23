@@ -10,15 +10,20 @@
 # Por último, tendrás que crear un objeto de la clase Coche y mostrarlo por consola.
 
 
-class Vehiculo:
-    color = "Azul"
-    ruedas = 4
-    puertas = 4
+class Vehiculo():
+    def __int__(self, color, ruedas, puertas):
+        self.color = color
+        self.ruedas = ruedas
+        self.puertas = puertas
 
 
 class Coche(Vehiculo):
-    velocidad = 180
-    cilindrada = 4
+    def __init__(self, velocidad, cilindrada, color, ruedas, puertas):
+        self.velocidad = velocidad
+        self.cilindrada = cilindrada
+        super().__int__(color, ruedas, puertas)
 
-c = Coche()
-print(c.color, c.ruedas, c.puertas, c.velocidad, c.cilindrada)
+
+c = Coche(120, 1500, "Rojo", 4, 4)
+print("El coche es de color", c.color, "Tiene", c.ruedas, "ruedas,", c.puertas, "puertas, va a", c.velocidad,
+      "km/h y tiene", c.cilindrada, " cilindradas")
