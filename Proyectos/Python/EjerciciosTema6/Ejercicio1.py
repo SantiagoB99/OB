@@ -11,7 +11,7 @@
 
 
 class Vehiculo():
-    def __int__(self, color, ruedas, puertas):
+    def __init__(self, color, ruedas, puertas):
         self.color = color
         self.ruedas = ruedas
         self.puertas = puertas
@@ -21,7 +21,7 @@ class Coche(Vehiculo):
     def __init__(self, velocidad, cilindrada, color, ruedas, puertas):
         self.velocidad = velocidad
         self.cilindrada = cilindrada
-        super().__int__(color, ruedas, puertas)
+        super().__init__(color, ruedas, puertas)
 
 
 c = Coche(120, 1500, "Rojo", 4, 4)
