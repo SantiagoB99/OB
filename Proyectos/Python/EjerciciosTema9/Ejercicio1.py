@@ -4,8 +4,8 @@
 # ordenados alfabéticamente y separados por comas.
 
 lista = (input("Ingrese la lista de paises \n"))
-lista = list(set(lista.split(", ")))
-lista.sort()
-print(lista)
+lista = sorted(list(set(lista.split(", "))))
+print(", ".join(lista))
+
 
 
